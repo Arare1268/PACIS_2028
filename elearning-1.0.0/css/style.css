@@ -191,7 +191,7 @@
 
 /* 修改 Carousel 整體容器高度 */
 .header-carousel .owl-carousel-item {
-    height: 450px; /* 您可以根據需求調整這個數值，例如 500px ~ 800px */
+    height: 4%; /* 您可以根據需求調整這個數值，例如 500px ~ 800px */
     position: relative;
     overflow: hidden;
 }
