@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Photo to be announced">
+  <rect width="400" height="400" fill="#e3e6ea"/>
+  <circle cx="200" cy="158" r="68" fill="#b8bfc7"/>
+  <path d="M84 360c0-64 52-112 116-112s116 48 116 112z" fill="#b8bfc7"/>
+  <text x="200" y="388" text-anchor="middle" font-family="Nunito, Arial, sans-serif" font-size="22" fill="#8a929b">Photo coming soon</text>
+</svg>

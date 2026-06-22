@@ -4,19 +4,35 @@
     <meta charset="utf-8">
     <title>Keynote Speakers - PACIS 2028</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    
+    <meta content="PACIS 2028, Pacific Asia Conference on Information Systems, Kaohsiung, Taiwan" name="keywords">
+    <meta content="PACIS 2028 will be held in Kaohsiung, Taiwan. Keynote Speakers." name="description">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link href="img/favicon.ico" rel="icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0" style="color: var(--primary);"><i class="fa fa-anchor me-3"></i>PACIS 2028</h2>
@@ -26,7 +42,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Program</a>
@@ -35,7 +51,7 @@
                         <a href="keynote.html" class="dropdown-item">Keynote Speakers</a>
                         <a href="doctoral.html" class="dropdown-item">Doctoral Consortium</a>
                         <a href="404.html" class="dropdown-item">Junior Faculty Consortium</a>
-                        <a href="404.html" class="dropdown-item">Workshops & Panels</a>
+                        <a href="workshops.html" class="dropdown-item">Workshops & Panels</a>
                         <a href="404.html" class="dropdown-item">Paper Development Workshop</a>
                     </div>
                 </div>
@@ -43,18 +59,18 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hotel & Travel</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="venue.html" class="dropdown-item">Conference Venue</a>
-                        <a href="404.html" class="dropdown-item">Accommodation</a>
-                        <a href="404.html" class="dropdown-item">About Kaohsiung</a>
-                        <a href="404.html" class="dropdown-item">Transportation</a>
-                        <a href="404.html" class="dropdown-item">Visa Information</a>
-                        <a href="404.html" class="dropdown-item">Local Tours</a>
+                        <a href="accommodation.html" class="dropdown-item">Accommodation</a>
+                        <a href="kaohsiung.html" class="dropdown-item">About Kaohsiung</a>
+                        <a href="transportation.html" class="dropdown-item">Transportation</a>
+                        <a href="visa.html" class="dropdown-item">Visa Information</a>
+                        <a href="tours.html" class="dropdown-item">Local Tours</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Submissions</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Submissions</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="404.html" class="dropdown-item">Call for Papers</a>
-                        <a href="404.html" class="dropdown-item">Important Dates</a>
+                        <a href="cfp.html" class="dropdown-item">Call for Papers</a>
+                        <a href="dates.html" class="dropdown-item">Important Dates</a>
                         <a href="404.html" class="dropdown-item">Track Descriptions</a>
                         <a href="404.html" class="dropdown-item">Paper Templates</a>
                         <a href="404.html" class="dropdown-item">Submission FAQ</a>
@@ -64,7 +80,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sponsors</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="404.html" class="dropdown-item">Sponsorship Opportunities</a>
+                        <a href="sponsorship.html" class="dropdown-item">Sponsorship Opportunities</a>
                         <a href="404.html" class="dropdown-item">Current Sponsors</a>
                         <a href="404.html" class="dropdown-item">Partners</a>
                     </div>
@@ -74,53 +90,64 @@
         </div>
     </nav>
 
-
+    <!-- Header Start -->
     <div class="container-fluid bg-primary py-5 mb-5 page-header">
-        <div class="container py-5 text-center">
-            <h1 class="display-3 text-white animated slideInDown">Keynote Speakers</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Keynote Speakers</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Program</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Program</li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Keynote</li>
-                </ol>
-            </nav>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Header End -->
+
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Speakers</h6>
-                <h1 class="mb-5">Our Keynote Speakers</h1>
+                <h1 class="mb-4">Keynote Speakers</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <p class="mb-5 text-muted">PACIS 2028 will feature two keynote addresses bridging academia and industry. Distinguished speakers will be announced as the program develops.</p>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item bg-light text-center p-4">
-                        <img class="img-fluid rounded-circle w-75 mb-4" src="img/team-1.jpg" alt="">
-                        <h4 class="mb-0">Dr. Jane Smith</h4>
-                        <p class="text-primary mb-2">Professor, Tech University</p>
-                        <p class="mb-3">Topic: The Future of AI in Information Systems</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light text-center p-5 h-100">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4" style="width:110px;height:110px;background:var(--primary-light);">
+                            <i class="fa fa-3x fa-graduation-cap text-white"></i>
+                        </div>
+                        <h4 class="mb-1">Keynote I &mdash; Academia</h4>
+                        <p class="text-primary mb-3">Speaker to be announced</p>
+                        <p class="mb-0">An editor-in-chief from one of the field's three leading journals will share perspectives on the future of IS research.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light text-center p-4">
-                        <img class="img-fluid rounded-circle w-75 mb-4" src="img/team-2.jpg" alt="">
-                        <h4 class="mb-0">John Doe</h4>
-                        <p class="text-primary mb-2">Lead Researcher, Global IT</p>
-                        <p class="mb-3">Topic: Digital Transformation in Asia</p>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light text-center p-5 h-100">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4" style="width:110px;height:110px;background:var(--primary-light);">
+                            <i class="fa fa-3x fa-microchip text-white"></i>
+                        </div>
+                        <h4 class="mb-1">Keynote II &mdash; Industry</h4>
+                        <p class="text-primary mb-3">Speaker to be announced</p>
+                        <p class="mb-0">A leader from industry &mdash; spanning smart-city government, Google, and TSMC &mdash; will discuss AI in practice.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item bg-light text-center p-4">
-                        <img class="img-fluid rounded-circle w-75 mb-4" src="img/team-3.jpg" alt="">
-                        <h4 class="mb-0">Dr. Alan Turing</h4>
-                        <p class="text-primary mb-2">Data Scientist</p>
-                        <p class="mb-3">Topic: Leapfrogging with Data Analytics</p>
-                    </div>
-                </div>
+            </div>
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.2s">
+                <a href="schedule.html" class="btn btn-primary py-2 px-4">View Full Program <i class="fa fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </div>
+
     <footer class="container-fluid footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #004077; color: #fff;">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
@@ -137,15 +164,15 @@
                 <div class="col-lg-5 col-md-12">
                     <div class="row footer-links-grid">
                         <div class="col-6">
-                            <a class="btn btn-link" href="">Home</a>
-                            <a class="btn btn-link" href="">About</a>
-                            <a class="btn btn-link" href="">Program</a>
-                            <a class="btn btn-link" href="">Register</a>
+                            <a class="btn btn-link" href="index.html">Home</a>
+                            <a class="btn btn-link" href="about.html">About</a>
+                            <a class="btn btn-link" href="schedule.html">Program</a>
+                            <a class="btn btn-link" href="https://aisnet.org/Login.aspx?returl=%2fevents%2fEventDetails.aspx%3falias%3dpacis2026">Register</a>
                         </div>
                         <div class="col-6">
-                            <a class="btn btn-link" href="">Hotel & Travel</a>
-                            <a class="btn btn-link" href="">Submissions</a>
-                            <a class="btn btn-link" href="">Sponsorship</a>
+                            <a class="btn btn-link" href="venue.html">Hotel & Travel</a>
+                            <a class="btn btn-link" href="cfp.html">Submissions</a>
+                            <a class="btn btn-link" href="sponsorship.html">Sponsorship</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +182,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
-                        <p class="mb-0">© Copyright 2028 Association for Information Systems (All rights reserved)</p>
+                        <p class="mb-0">&copy; Copyright 2028 Association for Information Systems (All rights reserved)</p>
                     </div>
                     <div class="col-md-4 text-center text-md-end">
                         <div class="d-flex justify-content-center justify-content-md-end social-icons">
@@ -169,8 +196,15 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

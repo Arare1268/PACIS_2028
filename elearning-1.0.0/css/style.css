@@ -52,7 +52,7 @@
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', 'Noto Sans TC', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -207,15 +207,18 @@
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
-    right: 8%;
+    left: 0;
+    right: 0;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px; /* 貼近左右邊緣，避免左箭頭壓到 hero 標題 */
+    pointer-events: none; /* 讓容器不擋住輪播內容，只有按鈕可點 */
 }
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
+    pointer-events: auto;
     width: 45px;
     height: 45px;
     display: flex;
