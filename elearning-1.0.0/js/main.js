@@ -71,6 +71,7 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
+        autoplayTimeout: 8000,
         smartSpeed: 1500,
         items: 1,
         dots: false,
@@ -80,6 +81,18 @@
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ]
+    });
+
+
+    // Venue hotel carousel
+    $(".venue-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        items: 1,
+        dots: true,
+        loop: true,
+        nav: false
     });
 
 
