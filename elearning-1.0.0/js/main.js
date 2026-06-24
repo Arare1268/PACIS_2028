@@ -84,6 +84,18 @@
     });
 
 
+    // Room carousel (accommodation page)
+    $(".room-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 800,
+        items: 1,
+        dots: true,
+        loop: true,
+        nav: false
+    });
+
+
     // Venue hotel carousel
     $(".venue-carousel").owlCarousel({
         autoplay: true,
