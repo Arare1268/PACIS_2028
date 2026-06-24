@@ -1,0 +1,11 @@
+# --- 存取限制:目前僅開放校內 140.117 網段 ---
+# 將來要公開給所有人時,把下面這三行刪掉即可。
+Order deny,allow
+Deny from all
+Allow from 140.117
+
+# --- 覆蓋伺服器的 Content-Security-Policy,放行網站所需的外部資源 ---
+<IfModule mod_headers.c>
+    Header unset Content-Security-Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self'"
+</IfModule>
