@@ -1,8 +1,6 @@
-# --- 存取限制:目前僅開放校內 140.117 網段 ---
-# 將來要公開給所有人時,把下面這三行刪掉即可。
-Order deny,allow
-Deny from all
-Allow from 140.117
+# --- 存取限制:開放所有 IP ---
+Order allow,deny
+Allow from all
 
 # --- 覆蓋伺服器的 Content-Security-Policy,放行網站所需的外部資源 ---
 <IfModule mod_headers.c>
