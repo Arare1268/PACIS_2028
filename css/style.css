@@ -238,10 +238,22 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/hero-skyline.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.page-header.ph-campus {
+    background-image: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/hero-xiziwan.jpg);
+}
+
+.page-header.ph-music {
+    background-image: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/hero-music-center.jpg);
+}
+
+.page-header.ph-pier2 {
+    background-image: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/hero-pier2.jpg);
 }
 
 .page-header-inner {
